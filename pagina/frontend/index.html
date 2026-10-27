@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d41c4332fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">Consulta Clima</a></h1>
+            <button type="button" id="btn-tema" aria-label="Ativar tema escuro">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <span>
+            <p>Filtre a partir da data:</p>
+            <input type="date" name="pesquisa-data" class="pesquisa-data" id="pesquisa-data" placeholder="Pesquisar data (dd/mm/aaaa)">
+        </span>
+        <section class="table-wrapper">
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data e Hora</th>
+                            <th>Temperatura</th>
+                            <th>Umidade</th>
+                            <th>Pressão</th>
+                            <th>Luminosidade</th>
+                            <th>Chuva</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <div class="modal-overlay">
+        <div class="modal-wrapper">
+            <i class="fa-solid fa-x"></i>
+            <h2>Dados:</h2>
+            <div class="modal-container">
+            
+            </div>
+        </div>
+    </div>
+    <button type="button" id="btn-topo" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
